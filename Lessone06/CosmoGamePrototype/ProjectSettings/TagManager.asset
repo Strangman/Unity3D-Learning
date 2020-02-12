@@ -8,6 +8,7 @@ TagManager:
   - Coin
   - Boost
   - Bullet
+  - Background
   layers:
   - Default
   - TransparentFX
@@ -17,11 +18,11 @@ TagManager:
   - UI
   - 
   - 
+  - Player
   - 
   - 
   - 
-  - 
-  - 
+  - Background
   - 
   - 
   - 

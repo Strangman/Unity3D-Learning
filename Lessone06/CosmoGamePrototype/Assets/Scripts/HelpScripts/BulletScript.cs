@@ -7,6 +7,7 @@ public class BulletScript : MonoBehaviour
     [SerializeField] private int _damage;
     [SerializeField] private float _speed;
     [SerializeField] private float _verticalBorder;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,5 +30,10 @@ public class BulletScript : MonoBehaviour
     public int GetBulletDamage()
     {
         return _damage;
+    }
+    public void BulletShot(int damage, Vector3 gunPosition)
+    {
+        _damage = damage;
+        Instantiate(gameObject, gunPosition, Quaternion.identity);
     }
 }

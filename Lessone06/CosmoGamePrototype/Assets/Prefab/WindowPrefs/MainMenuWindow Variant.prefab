@@ -132,6 +132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _loadScene: FirstLevel
+  _loadKey: 0
 --- !u!1 &722507453
 GameObject:
   m_ObjectHideFlags: 0
@@ -918,16 +919,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainMenuWindow
       objectReference: {fileID: 0}
+    - target: {fileID: 3546436191983462746, guid: cf814d98afbf49c4ba64d05ee33de200,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6286367331236002656, guid: cf814d98afbf49c4ba64d05ee33de200,
         type: 3}
       propertyPath: _openingWindows.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6286367331236002656, guid: cf814d98afbf49c4ba64d05ee33de200,
         type: 3}
       propertyPath: _openingWindows.Array.data[0]._openButton
       value: 
       objectReference: {fileID: 5080244785326634036}
+    - target: {fileID: 6286367331236002656, guid: cf814d98afbf49c4ba64d05ee33de200,
+        type: 3}
+      propertyPath: _openingWindows.Array.data[1]._openButton
+      value: 
+      objectReference: {fileID: 5961543114916558298}
+    - target: {fileID: 6286367331236002656, guid: cf814d98afbf49c4ba64d05ee33de200,
+        type: 3}
+      propertyPath: _openingWindows.Array.data[2]._openButton
+      value: 
+      objectReference: {fileID: 534044688558592001}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf814d98afbf49c4ba64d05ee33de200, type: 3}
 --- !u!224 &2980959635556579150 stripped

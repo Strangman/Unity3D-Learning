@@ -66,8 +66,10 @@
     <Compile Include="Assets\Scripts\ControllersScripts\CoinControllerScript.cs" />
     <Compile Include="Assets\Scripts\ControllersScripts\EndGameController.cs" />
     <Compile Include="Assets\Scripts\ControllersScripts\EnemySpawnController.cs" />
+    <Compile Include="Assets\Scripts\ControllersScripts\MeteorSpawnControllerScript.cs" />
     <Compile Include="Assets\Scripts\ControllersScripts\ScoreControllerScript.cs" />
     <Compile Include="Assets\Scripts\GunScripts\GunScript.cs" />
+    <Compile Include="Assets\Scripts\HelpScripts\BackgroundTileBehavior.cs" />
     <Compile Include="Assets\Scripts\HelpScripts\BoostScript.cs" />
     <Compile Include="Assets\Scripts\HelpScripts\BulletScript.cs" />
     <Compile Include="Assets\Scripts\HelpScripts\ChageTextScript.cs" />
@@ -79,12 +81,25 @@
     <Compile Include="Assets\Scripts\HelpScripts\ShowScoreScript.cs" />
     <Compile Include="Assets\Scripts\HelpScripts\SimpleMovementScript.cs" />
     <Compile Include="Assets\Scripts\HelpScripts\StoreCoinShowScript.cs" />
+    <Compile Include="Assets\Scripts\NPCScripts\BossMovementScript.cs" />
+    <Compile Include="Assets\Scripts\NPCScripts\DiagonalMovementScript.cs" />
     <Compile Include="Assets\Scripts\NPCScripts\NPCBehavior.cs" />
     <Compile Include="Assets\Scripts\NPCScripts\NPCBodyScript.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerBodyScript.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerInputScript.cs" />
+    <Compile Include="Assets\Scripts\Sound\AudioManager.cs" />
+    <Compile Include="Assets\Scripts\Sound\menuMusicOnScript.cs" />
+    <Compile Include="Assets\Scripts\Sound\MusicOnScript.cs" />
+    <Compile Include="Assets\Scripts\UIScripts\BuyButtonTextScript.cs" />
     <Compile Include="Assets\Scripts\UIScripts\BuyCoinsScript.cs" />
+    <Compile Include="Assets\Scripts\UIScripts\ChosedLevelScript.cs" />
+    <Compile Include="Assets\Scripts\UIScripts\ChoseLevelController.cs" />
+    <Compile Include="Assets\Scripts\UIScripts\DecreaseCoinsScript.cs" />
+    <Compile Include="Assets\Scripts\UIScripts\FirstEnterScript.cs" />
+    <Compile Include="Assets\Scripts\UIScripts\HPShowScript.cs" />
+    <Compile Include="Assets\Scripts\UIScripts\MusicAndSoundStateSaveScript.cs" />
     <Compile Include="Assets\Scripts\UIScripts\OpenCloseWindowScript.cs" />
+    <Compile Include="Assets\Scripts\UIScripts\UpgradeLevelTextScript.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Games/Programming/Unity3D/Lessone06/CosmoGamePrototype/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

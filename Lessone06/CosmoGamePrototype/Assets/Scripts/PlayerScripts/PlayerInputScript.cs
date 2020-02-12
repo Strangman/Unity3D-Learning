@@ -8,6 +8,7 @@ public class PlayerInputScript : MonoBehaviour
     [SerializeField] private float _horizontalBorder;
     [SerializeField] private float _verticalBorder;
     [SerializeField] private GunScript _playerGun;
+    [SerializeField] private GameObject[] _jetFlames;
 
     // Start is called before the first frame update
     void Start()
@@ -21,10 +22,19 @@ public class PlayerInputScript : MonoBehaviour
         if (Input.GetKey(KeyCode.W) && transform.position.y < _verticalBorder)
         {
             MoveUp();
+            ActivateFlames();
         }
         else if(Input.GetKey(KeyCode.S) && transform.position.y > (-_verticalBorder))
         {
             MoveDown();
+        }
+
+        if(Input.GetKeyUp(KeyCode.W))
+        {
+            foreach(var item in _jetFlames)
+            {
+                item.SetActive(false);
+            }
         }
 
         if (Input.GetKey(KeyCode.A) && transform.position.x > (-_horizontalBorder))
@@ -57,5 +67,12 @@ public class PlayerInputScript : MonoBehaviour
     private void MoveRight()
     {
         transform.position += Vector3.right * _speed;
+    }
+    private void ActivateFlames()
+    {
+        foreach(var item in _jetFlames)
+        {
+            item.SetActive(true);
+        }
     }
 }

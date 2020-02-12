@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class LoadNewSceneScript : MonoBehaviour
 {
     [SerializeField] private string _loadScene;
-    [SerializeField] private string _loadKey;
+    [SerializeField] private LoadKey _loadKey;
     private void Awake()
     {
         gameObject.GetComponent<Button>().onClick.AddListener(LoadNewScene);
@@ -25,8 +25,8 @@ public class LoadNewSceneScript : MonoBehaviour
     }
     public void LoadNewScene()
     {
-        var getCoins = PlayerPrefs.GetInt(_loadKey);
-        PlayerPrefs.SetInt(_loadKey, getCoins + FindObjectOfType<CoinControllerScript>().GetCoins());
+        var getCoins = PlayerPrefs.GetInt(_loadKey.ToString());
+        PlayerPrefs.SetInt(_loadKey.ToString(), getCoins + FindObjectOfType<CoinControllerScript>().GetCoins());
         SceneManager.LoadScene(_loadScene);
     }
 }

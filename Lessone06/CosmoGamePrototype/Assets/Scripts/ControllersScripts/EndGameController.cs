@@ -10,6 +10,8 @@ public class EndGameController : MonoBehaviour
     [SerializeField] private ShowScoreScript _showEndScore;
     [SerializeField] private CoinControllerScript _coinControllerScript;
     [SerializeField] private ShowScoreScript _showEndCoin;
+    [SerializeField] private int _openedLevel;
+    private const LoadKey _openedlevelKey = LoadKey.OpenedLevel;
     private bool _playerIsAlive = true;
 
     // Start is called before the first frame update
@@ -30,8 +32,16 @@ public class EndGameController : MonoBehaviour
     }
     public void EndGameEvent()
     {
-        FindObjectOfType<EnemySpawnController>().gameObject.SetActive(false);
-        _loseOrWinText.ChangeText(_playerIsAlive ? "You win" : "You lose" );
+        FindObjectOfType<EnemySpawnController>()?.gameObject.SetActive(false);
+        if(_playerIsAlive)
+        {
+            _loseOrWinText.ChangeText("You win");
+            PlayerPrefs.SetInt(_openedlevelKey.ToString(), _openedLevel);
+        }
+        else
+        {
+            _loseOrWinText.ChangeText("You lose");
+        }
         _showEndScore.ShowScore(_scoreControllerScript.GetScore());
         _showEndCoin.ShowScore(_coinControllerScript.GetCoins());
         _endWindow.SetActive(true);
