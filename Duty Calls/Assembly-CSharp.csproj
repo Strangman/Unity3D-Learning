@@ -66,12 +66,14 @@
     <Compile Include="Assets\Scripts\ButtonScript.cs" />
     <Compile Include="Assets\Scripts\DoorInteract.cs" />
     <Compile Include="Assets\Scripts\GUIScript.cs" />
+    <Compile Include="Assets\Scripts\GunScript.cs" />
     <Compile Include="Assets\Scripts\IInteract.cs" />
     <Compile Include="Assets\Scripts\InteractScript.cs" />
     <Compile Include="Assets\Scripts\MouseLook.cs" />
     <Compile Include="Assets\Scripts\PlayerHPScript.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\SelectObject.cs" />
+    <Compile Include="Assets\Scripts\TargetScript.cs" />
     <Compile Include="Assets\Scripts\TrapScript.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Games/Programming/Unity3D/Duty Calls/Duty Calls/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

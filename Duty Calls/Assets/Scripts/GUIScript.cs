@@ -8,6 +8,7 @@ public class GUIScript : MonoBehaviour
     [SerializeField] private Text _hpText;
 
     private PlayerHPScript _playerHPScript;
+    
 
     private void Awake()
     {
